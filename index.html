@@ -11,8 +11,71 @@
             sizes="32x32"
             href="./images/favicon-32x32.png"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles/style.css" />
+        <script src="./main.js" defer></script>
 
         <title>Frontend Mentor | Calculator app</title>
     </head>
-    <body></body>
+    <body>
+        <div class="main-container">
+            <header>
+                <h1>calc</h1>
+
+                <div class="themes-container">
+                    <span>THEME</span>
+                    <div class="theme-options">
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+                        <div class="theme-select"></div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <section class="result-calc-container">
+                    <span>399,981</span>
+                </section>
+
+                <section class="calc-keyboard">
+                    <div class="keys-container">
+                        <span class="key">7</span>
+                        <span class="key">8</span>
+                        <span class="key">9</span>
+                        <span class="key">DEL</span>
+                    </div>
+                    <div class="keys-container">
+                        <span class="key">4</span>
+                        <span class="key">5</span>
+                        <span class="key">6</span>
+                        <span class="key">+</span>
+                    </div>
+                    <div class="keys-container">
+                        <span class="key">1</span>
+                        <span class="key">2</span>
+                        <span class="key">3</span>
+                        <span class="key">-</span>
+                    </div>
+                    <div class="keys-container">
+                        <span class="key">.</span>
+                        <span class="key">0</span>
+                        <span class="key">/</span>
+                        <span class="key">x</span>
+                    </div>
+                    <div class="keys-container">
+                        <span>RESET</span>
+                        <span>=</span>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
 </html>
