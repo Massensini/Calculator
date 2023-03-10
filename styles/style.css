@@ -101,6 +101,7 @@ main {
     padding: 25px;
     display: flex;
     flex-direction: column;
+    gap: 15px;
     background-color: var(--grayish-red);
     border-radius: 10px;
 }
@@ -108,5 +109,62 @@ main {
 .keys-container {
     width: 100%;
     display: flex;
-    justi
+    justify-content: space-around;
+}
+
+.key {
+    width: 20%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 0px 3px 1px 0px var(--dark-grayish-orange);
+}
+
+.key-reset,
+.key-result {
+    width: 45%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: var(--very-light-gray);
+    font-size: 20px;
+}
+
+.key-reset {
+    background-color: var(--very-dark-cyan);
+    box-shadow: 0px 3px 1px 0px var(--dark-moderate-cyan);
+}
+
+.key-result {
+    background-color: var(--orange);
+    box-shadow: 0px 3px 1px 0px var(--dark-orange);
+}
+
+.key:hover,
+.key-reset:hover,
+.key-result:hover {
+    cursor: pointer;
+}
+
+.key:hover {
+    background-color: var(--white);
+}
+
+.key-reset:hover {
+    background-color: var(--dark-moderate-cyan);
+}
+
+.key-result:hover {
+    background-color: rgb(255, 111, 44);
+}
+
+.symbol:hover {
+    background-color: var(--dark-moderate-cyan);
+    color: var(--white);
 }
