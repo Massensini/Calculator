@@ -18,7 +18,8 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./styles/style.css" />
-        <script src="./main.js" defer></script>
+        <script src="./src/main.js" defer></script>
+        <script src="./src/themes.js" defer></script>
 
         <title>Frontend Mentor | Calculator app</title>
     </head>
@@ -42,37 +43,37 @@
 
             <main>
                 <section class="result-calc-container">
-                    <span>399,981</span>
+                    <span id="calc-value"></span>
                 </section>
 
                 <section class="calc-keyboard">
                     <div class="keys-container">
-                        <span class="key">7</span>
-                        <span class="key">8</span>
-                        <span class="key">9</span>
-                        <span class="key symbol">DEL</span>
+                        <span class="key seven" onclick="insert('7')">7</span>
+                        <span class="key eight" onclick="insert('8')">8</span>
+                        <span class="key nine" onclick="insert('9')">9</span>
+                        <span class="key symbol delete">DEL</span>
                     </div>
                     <div class="keys-container">
-                        <span class="key">4</span>
-                        <span class="key">5</span>
-                        <span class="key">6</span>
-                        <span class="key symbol">+</span>
+                        <span class="key four" onclick="insert('4')">4</span>
+                        <span class="key five" onclick="insert('5')">5</span>
+                        <span class="key six" onclick="insert('6')">6</span>
+                        <span class="key symbol sum">+</span>
                     </div>
                     <div class="keys-container">
-                        <span class="key">1</span>
-                        <span class="key">2</span>
-                        <span class="key">3</span>
-                        <span class="key symbol">-</span>
+                        <span class="key one" onclick="insert('1')">1</span>
+                        <span class="key two" onclick="insert('2')">2</span>
+                        <span class="key three" onclick="insert('3')">3</span>
+                        <span class="key symbol subtract">-</span>
                     </div>
                     <div class="keys-container">
-                        <span class="key">.</span>
-                        <span class="key">0</span>
-                        <span class="key symbol">/</span>
-                        <span class="key symbol">x</span>
+                        <span class="key point">.</span>
+                        <span class="key zero" onclick="insert('0')">0</span>
+                        <span class="key symbol division">/</span>
+                        <span class="key symbol multiplication">x</span>
                     </div>
                     <div class="keys-container">
-                        <span class="key-reset">RESET</span>
-                        <span class="key-result">=</span>
+                        <span class="key-reset reset">RESET</span>
+                        <span class="key-result equal">=</span>
                     </div>
                 </section>
             </main>
